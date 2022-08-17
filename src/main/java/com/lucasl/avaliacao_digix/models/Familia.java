@@ -27,9 +27,17 @@ public class Familia {
     
     public String toString() {
         return "Família: " + this.descricao 
-                + " Dependentes: " + String.valueOf(this.dependentes)
-                + " Renda: R$" + String.valueOf(this.renda)
-                + " Pontos: " + String.valueOf(this.pontos);
+                + "\nDependentes: " + String.valueOf(this.dependentes)
+                + "\nRenda: R$" + String.valueOf(this.renda)
+                + "\nPontuação: " + String.valueOf(this.pontos);
+    }
+
+    public String getDescricao() {
+        return descricao;
+    }
+
+    public void setDescricao(String descricao) {
+        this.descricao = descricao;
     }
     
     public int getDependentes() {
